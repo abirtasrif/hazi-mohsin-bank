@@ -31,7 +31,7 @@ nav {
 }
 
 .logo {
-  height: 5rem;
+  height: 10rem;
 }
 
 .login {
@@ -84,7 +84,7 @@ nav {
   gap: 2rem;
 
   /* Login animation */
-  opacity: 0;
+  opacity: 1;
   transition: all 0.3s;
 }
 
