@@ -26,7 +26,7 @@ const accounts = [
     // locale: "en-US",
   },
   {
-    owner: "Louise Lucas",
+    owner: "Mehedi Hasan",
     movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -300, 1500, -1850],
     interestRate: 1.3, // %
     password: 5678,
@@ -119,3 +119,37 @@ function displaySummary(account) {
   labelSumInterest.textContent = `${interest}$`;
 }
 displaySummary(accounts[0]);
+
+/////////////////////////////////////////////////////////////////////
+// Balance
+/////////////////////////////////////////////////////////////////////
+
+function displayBalance(account) {
+  account.balance = account.movements.reduce((acc, move) => acc + move, 0);
+  labelBalance.textContent = `${account.balance}$`;
+}
+displayBalance(accounts[0]);
+
+/////////////////////////////////////////////////////////////////////
+// Username
+/////////////////////////////////////////////////////////////////////
+
+function createUsernames(accounts) {
+  accounts.forEach((account) => {
+    account.username = account.owner
+      .toLowerCase()
+      .split(" ")
+      .map((word) => word.at(0))
+      .join("");
+  });
+}
+createUsernames(accounts);
+
+/////////////////////////////////////////////////////////////////////
+// Login
+/////////////////////////////////////////////////////////////////////
+
+let currentAccount;
+btnLogin.addEventListener("click", function () {
+  console.log("clicked");
+});
