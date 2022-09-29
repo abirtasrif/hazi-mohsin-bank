@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #444;
   background-color: #f3f3f3;
   height: 100vh;
@@ -30,8 +30,19 @@ nav {
   font-weight: 500;
 }
 
+@keyframes animation {
+  0%,
+  100% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 .logo {
-  height: 10rem;
+  height: 12rem;
+  animation: animation 2s infinite;
 }
 
 .login {
@@ -52,16 +63,18 @@ nav {
 }
 
 .login-input:focus {
-  border-color: #ccc;
+  border-color: #87cefab3;
 }
 
 .login-input::placeholder {
-  color: #bbb;
+  color: #87cefab3;
 }
 
 .login-btn {
-  background: none;
-  font-size: 2rem;
+  background: #87cefab3;
+  border-radius: 2rem;
+  padding: 0 2rem 0 2rem;
+  font-size: 1.7rem;
   color: inherit;
   cursor: pointer;
   transition: all 0.3s;
@@ -77,7 +90,7 @@ nav {
 .app {
   position: relative;
   max-width: 100rem;
-  margin: 4rem auto;
+  margin: 1rem auto 4rem;
   display: grid;
   grid-template-columns: 4fr 3fr;
   grid-template-rows: auto repeat(3, 15rem) auto;
@@ -139,11 +152,11 @@ nav {
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 500;
-  color: #666;
+  color: #37373780;
 }
 
 .movements-type-deposit {
-  background-color: #00b79f;
+  background-color: #0b8600;
 }
 
 .movements-type-withdrawal {
@@ -175,13 +188,16 @@ nav {
   margin-right: 2.5rem;
 }
 
-.summary-value-in,
-.summary-value-interest {
+.summary-value-in {
   color: #00b79f;
 }
 
 .summary-value-out {
   color: #f3442a;
+}
+
+.summary-value-interest {
+  color: #726cbe;
 }
 
 .btn-sort {
@@ -205,11 +221,11 @@ nav {
 }
 
 .operation-loan {
-  background-color: #f3442a;
+  background-color: #a6a0ff;
 }
 
 .operation-close {
-  background-color: #fdb850;
+  background-color: #ff4f4f;
 }
 
 h2 {
@@ -258,13 +274,13 @@ h2 {
 .form-btn {
   border-radius: 0.5rem;
   font-size: 1.8rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .form-btn:focus {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .logout-timer {
@@ -282,5 +298,5 @@ footer {
   text-align: center;
   font-size: 1.3rem;
   color: #888;
-  padding-top: 3rem;
+  padding: 2rem 0 1rem 0;
 }
