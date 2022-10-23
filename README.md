@@ -11,7 +11,7 @@ _**Login Account and passwords are below**_
 | ll          | 1234        |
 | bm          | 1234        |
 
-Live Link: [Click here to Visit](https://abirtasrif.github.io/hazi-mohsin-bank/)
+Live Link: [Click here to Visit](https://hazi-muhsin-bank.netlify.app/)
 
 >Preview of One Account
 ![image](https://i.ibb.co/68TggCR/Bank-App.png)
